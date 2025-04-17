@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		1D4D03FF2DB0B4210096541D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D4D020C2DB065590096541D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D4D02132DB065590096541D;
+			remoteInfo = Assesment_wlmrt;
+		};
+		1D4D040F2DB0B7300096541D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D4D020C2DB065590096541D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D4D02132DB065590096541D;
+			remoteInfo = Assesment_wlmrt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D4D02142DB065590096541D /* Assesment_wlmrt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assesment_wlmrt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D4D03FB2DB0B4210096541D /* Assesment_wlmrtUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assesment_wlmrtUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D4D04092DB0B7300096541D /* Assesment_wlmrtUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assesment_wlmrtUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1D4D02262DB0655A0096541D /* Exceptions for "Assesment_wlmrt" folder in "Assesment_wlmrt" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 1D4D02132DB065590096541D /* Assesment_wlmrt */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		1D4D02162DB065590096541D /* Assesment_wlmrt */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1D4D02262DB0655A0096541D /* Exceptions for "Assesment_wlmrt" folder in "Assesment_wlmrt" target */,
+			);
+			path = Assesment_wlmrt;
+			sourceTree = "<group>";
+		};
+		1D4D03FC2DB0B4210096541D /* Assesment_wlmrtUnitTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Assesment_wlmrtUnitTests;
+			sourceTree = "<group>";
+		};
+		1D4D040A2DB0B7300096541D /* Assesment_wlmrtUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Assesment_wlmrtUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D4D02112DB065590096541D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D4D03F82DB0B4210096541D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D4D04062DB0B7300096541D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D4D020B2DB065590096541D = {
+			isa = PBXGroup;
+			children = (
+				1D4D02162DB065590096541D /* Assesment_wlmrt */,
+				1D4D03FC2DB0B4210096541D /* Assesment_wlmrtUnitTests */,
+				1D4D040A2DB0B7300096541D /* Assesment_wlmrtUITests */,
+				1D4D02152DB065590096541D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1D4D02152DB065590096541D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D4D02142DB065590096541D /* Assesment_wlmrt.app */,
+				1D4D03FB2DB0B4210096541D /* Assesment_wlmrtUnitTests.xctest */,
+				1D4D04092DB0B7300096541D /* Assesment_wlmrtUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D4D02132DB065590096541D /* Assesment_wlmrt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D4D02272DB0655A0096541D /* Build configuration list for PBXNativeTarget "Assesment_wlmrt" */;
+			buildPhases = (
+				1D4D02102DB065590096541D /* Sources */,
+				1D4D02112DB065590096541D /* Frameworks */,
+				1D4D02122DB065590096541D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				1D4D02162DB065590096541D /* Assesment_wlmrt */,
+			);
+			name = Assesment_wlmrt;
+			packageProductDependencies = (
+			);
+			productName = Assesment_wlmrt;
+			productReference = 1D4D02142DB065590096541D /* Assesment_wlmrt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1D4D03FA2DB0B4210096541D /* Assesment_wlmrtUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D4D04012DB0B4210096541D /* Build configuration list for PBXNativeTarget "Assesment_wlmrtUnitTests" */;
+			buildPhases = (
+				1D4D03F72DB0B4210096541D /* Sources */,
+				1D4D03F82DB0B4210096541D /* Frameworks */,
+				1D4D03F92DB0B4210096541D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D4D04002DB0B4210096541D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				1D4D03FC2DB0B4210096541D /* Assesment_wlmrtUnitTests */,
+			);
+			name = Assesment_wlmrtUnitTests;
+			packageProductDependencies = (
+			);
+			productName = Assesment_wlmrtUnitTests;
+			productReference = 1D4D03FB2DB0B4210096541D /* Assesment_wlmrtUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1D4D04082DB0B7300096541D /* Assesment_wlmrtUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D4D04112DB0B7300096541D /* Build configuration list for PBXNativeTarget "Assesment_wlmrtUITests" */;
+			buildPhases = (
+				1D4D04052DB0B7300096541D /* Sources */,
+				1D4D04062DB0B7300096541D /* Frameworks */,
+				1D4D04072DB0B7300096541D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D4D04102DB0B7300096541D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				1D4D040A2DB0B7300096541D /* Assesment_wlmrtUITests */,
+			);
+			name = Assesment_wlmrtUITests;
+			packageProductDependencies = (
+			);
+			productName = Assesment_wlmrtUITests;
+			productReference = 1D4D04092DB0B7300096541D /* Assesment_wlmrtUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D4D020C2DB065590096541D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					1D4D02132DB065590096541D = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					1D4D03FA2DB0B4210096541D = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 1D4D02132DB065590096541D;
+					};
+					1D4D04082DB0B7300096541D = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 1D4D02132DB065590096541D;
+					};
+				};
+			};
+			buildConfigurationList = 1D4D020F2DB065590096541D /* Build configuration list for PBXProject "Assesment_wlmrt" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1D4D020B2DB065590096541D;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 1D4D02152DB065590096541D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D4D02132DB065590096541D /* Assesment_wlmrt */,
+				1D4D03FA2DB0B4210096541D /* Assesment_wlmrtUnitTests */,
+				1D4D04082DB0B7300096541D /* Assesment_wlmrtUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D4D02122DB065590096541D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D4D03F92DB0B4210096541D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D4D04072DB0B7300096541D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D4D02102DB065590096541D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D4D03F72DB0B4210096541D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D4D04052DB0B7300096541D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D4D04002DB0B4210096541D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D4D02132DB065590096541D /* Assesment_wlmrt */;
+			targetProxy = 1D4D03FF2DB0B4210096541D /* PBXContainerItemProxy */;
+		};
+		1D4D04102DB0B7300096541D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D4D02132DB065590096541D /* Assesment_wlmrt */;
+			targetProxy = 1D4D040F2DB0B7300096541D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D4D02282DB0655A0096541D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Assesment_wlmrt/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.baha.Assesment-wlmrt";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D4D02292DB0655A0096541D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Assesment_wlmrt/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.baha.Assesment-wlmrt";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1D4D022A2DB0655A0096541D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1D4D022B2DB0655A0096541D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D4D04022DB0B4210096541D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.baha.Assesment-wlmrtUnitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Assesment_wlmrt.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Assesment_wlmrt";
+			};
+			name = Debug;
+		};
+		1D4D04032DB0B4210096541D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.baha.Assesment-wlmrtUnitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Assesment_wlmrt.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Assesment_wlmrt";
+			};
+			name = Release;
+		};
+		1D4D04122DB0B7300096541D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.baha.Assesment-wlmrtUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Assesment_wlmrt;
+			};
+			name = Debug;
+		};
+		1D4D04132DB0B7300096541D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.baha.Assesment-wlmrtUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Assesment_wlmrt;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D4D020F2DB065590096541D /* Build configuration list for PBXProject "Assesment_wlmrt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D4D022A2DB0655A0096541D /* Debug */,
+				1D4D022B2DB0655A0096541D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D4D02272DB0655A0096541D /* Build configuration list for PBXNativeTarget "Assesment_wlmrt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D4D02282DB0655A0096541D /* Debug */,
+				1D4D02292DB0655A0096541D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D4D04012DB0B4210096541D /* Build configuration list for PBXNativeTarget "Assesment_wlmrtUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D4D04022DB0B4210096541D /* Debug */,
+				1D4D04032DB0B4210096541D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D4D04112DB0B7300096541D /* Build configuration list for PBXNativeTarget "Assesment_wlmrtUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D4D04122DB0B7300096541D /* Debug */,
+				1D4D04132DB0B7300096541D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1D4D020C2DB065590096541D /* Project object */;
+}
