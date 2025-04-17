@@ -7,51 +7,6 @@
 
 import Foundation
 
-//class CountriesViewModel {
-//    
-//    private(set) var allCountries: [Country] = []
-//    private(set) var filteredCountries: [Country] = []
-//    var onDataChanged: (() -> Void)?
-//
-//    func fetchCountries() {
-//        NetworkManager.shared.fetchCountries { [weak self] result in
-//            switch result {
-//            case .success(let countries):
-//                self?.allCountries = countries
-//                self?.filteredCountries = countries
-//            case .failure(let error):
-//                print("Fetch failed: \(error.localizedDescription)")
-//                self?.allCountries = []
-//                self?.filteredCountries = []
-//            }
-//            self?.onDataChanged?()
-//        }
-//    }
-//
-//    func filterCountries(with query: String) {
-//        guard !query.isEmpty else {
-//            filteredCountries = allCountries
-//            onDataChanged?()
-//            return
-//        }
-//
-//        filteredCountries = allCountries.filter {
-//            $0.name.lowercased().contains(query.lowercased()) ||
-//            $0.capital.lowercased().contains(query.lowercased())
-//        }
-//
-//        onDataChanged?()
-//    }
-//
-//    func country(at index: Int) -> Country {
-//        filteredCountries[index]
-//    }
-//
-//    func numberOfRows() -> Int {
-//        filteredCountries.count
-//    }
-//}
-
 
 class CountriesViewModel {
     
@@ -59,11 +14,12 @@ class CountriesViewModel {
     private(set) var allCountries: [Country] = []
     private(set) var filteredCountries: [Country] = []
     var onDataChanged: (() -> Void)?
-
+    var onLoadingChanged: ((Bool) -> Void)?
+    
     init(service: CountriesServiceProtocol) {
         self.service = service
     }
-
+    
     func fetchCountries() {
         service.fetchCountries { [weak self] result in
             switch result {
@@ -78,25 +34,33 @@ class CountriesViewModel {
             self?.onDataChanged?()
         }
     }
-
+    
     func filterCountries(with query: String) {
-        guard !query.isEmpty else {
-            filteredCountries = allCountries
-            onDataChanged?()
-            return
-        }
+        onLoadingChanged?(true)
+        DispatchQueue.global().asyncAfter(deadline: .now() + 0.3) { [weak self] in
+            guard let self = self else { return }
 
-        filteredCountries = allCountries.filter {
-            $0.name.lowercased().contains(query.lowercased()) ||
-            $0.capital.lowercased().contains(query.lowercased())
+            let results: [Country]
+            if query.isEmpty {
+                results = self.allCountries
+            } else {
+                results = self.allCountries.filter {
+                    $0.name.lowercased().contains(query.lowercased()) ||
+                    $0.capital.lowercased().contains(query.lowercased())
+                }
+            }
+            DispatchQueue.main.async {
+                self.filteredCountries = results
+                self.onLoadingChanged?(false)
+                self.onDataChanged?()
+            }
         }
-        onDataChanged?()
     }
-
+    
     func country(at index: Int) -> Country {
         filteredCountries[index]
     }
-
+    
     func numberOfRows() -> Int {
         filteredCountries.count
     }

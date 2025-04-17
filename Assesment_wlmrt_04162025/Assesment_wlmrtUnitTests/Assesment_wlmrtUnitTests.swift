@@ -60,18 +60,27 @@ final class CountriesViewModelTests: XCTestCase {
     }
 
     func test_filterCountries_returnsMatchingResults() {
+        let expectation = XCTestExpectation(description: "Filter countries async")
+        
         let mockService = MockCountriesService()
-        let mockCountries = [
+        mockService.mockResult = .success([
             Country(name: "Germany", region: "EU", code: "DE", capital: "Berlin"),
-            Country(name: "Brazil", region: "SA", code: "BR", capital: "Brasília")
-        ]
-        mockService.mockResult = .success(mockCountries)
-
+            Country(name: "France", region: "EU", code: "FR", capital: "Paris")
+        ])
+        
         let viewModel = CountriesViewModel(service: mockService)
+
+        viewModel.onDataChanged = {
+            viewModel.filterCountries(with: "Ger")
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+                XCTAssertEqual(viewModel.numberOfRows(), 1)
+                XCTAssertEqual(viewModel.country(at: 0).name, "Germany")
+                expectation.fulfill()
+            }
+        }
+
         viewModel.fetchCountries()
 
-        viewModel.filterCountries(with: "bra")
-        XCTAssertEqual(viewModel.numberOfRows(), 1)
-        XCTAssertEqual(viewModel.country(at: 0).name, "Brazil")
+        wait(for: [expectation], timeout: 2)
     }
 }
