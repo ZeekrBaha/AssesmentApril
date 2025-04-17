@@ -17,6 +17,7 @@ final class Assesment_wlmrtUITests: XCTestCase {
         continueAfterFailure = false
         app = XCUIApplication()
         app.launch()
+        XCUIDevice.shared.orientation = .portrait
         print(app.debugDescription)
         page = CountriesListPage(app: app)
     }

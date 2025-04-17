@@ -5,10 +5,16 @@
 //  Created by Baha Sadyr on 4/16/25.
 //
 
-
 import UIKit
 
 class CountriesViewController: UIViewController {
+    
+    private lazy var activityIndicator: UIActivityIndicatorView = {
+        let indicator = UIActivityIndicatorView(style: .medium)
+        indicator.hidesWhenStopped = true
+        indicator.translatesAutoresizingMaskIntoConstraints = false
+        return indicator
+    }()
     
     private lazy var tableView: UITableView = {
         let table = UITableView()
@@ -27,6 +33,7 @@ class CountriesViewController: UIViewController {
         sc.obscuresBackgroundDuringPresentation = false
         sc.searchBar.placeholder = "Search by name or capital"
         sc.hidesNavigationBarDuringPresentation = false
+        sc.searchBar.accessibilityIdentifier = "searchBar"
         return sc
     }()
     
@@ -43,8 +50,16 @@ class CountriesViewController: UIViewController {
     private lazy var viewModel: CountriesViewModel = {
         let vm = CountriesViewModel(service: CountriesService())
         vm.onDataChanged = { [weak self] in
-            self?.tableView.reloadData()
-            self?.updateEmptyState()
+            DispatchQueue.main.async {
+                self?.activityIndicator.stopAnimating()
+                self?.tableView.reloadData()
+                self?.updateEmptyState()
+            }
+        }
+        vm.onLoadingChanged = { [weak self] isLoading in
+            DispatchQueue.main.async {
+                isLoading ? self?.activityIndicator.startAnimating() : self?.activityIndicator.stopAnimating()
+            }
         }
         return vm
     }()
@@ -55,23 +70,28 @@ class CountriesViewController: UIViewController {
         view.backgroundColor = .systemBackground
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
-        definesPresentationContext = false
+        definesPresentationContext = true
         DispatchQueue.main.async {
             if let searchTextField = self.searchController.searchBar.value(forKey: "searchField") as? UITextField {
                 searchTextField.accessibilityIdentifier = "searchBar"
             }
         }
-        setupTableView()
+        setupViews()
         viewModel.fetchCountries()
     }
     
-    private func setupTableView() {
+    private func setupViews() {
         view.addSubview(tableView)
+        view.addSubview(activityIndicator)
+        
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: view.topAnchor),
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            
+            activityIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            activityIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
     }
     
